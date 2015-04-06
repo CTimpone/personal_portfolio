@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Portfolio</title>
+  <title>Chris Timpone | Web Developer</title>
   <%= stylesheet_link_tag    'application', media: 'all'%>
   <%= javascript_include_tag 'application'%>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:700,400' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <aside id="sidebar">
+    <div class="portrait group">
+      <div class="image-container">
+        <img src="#" class="selfie"/>
+      </div>
+      <strong>Chris Timpone</strong>
+    </div>
+    <ul class="links-content">
+      <li><a href="#">Description</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Resume</a></li>
+      <li><div class="quasi-border"></div> </li>
+    </ul>
+    <ul class="links-external">
+      <li><a href="https://github.com/CTimpone">Github</a></li>
+      <li><a href="https://www.linkedin.com/pub/christopher-timpone/b5/b42/43a">LinkedIn</a></li>
+      <li><a href="mailto:ChrisTimpone@gmail.com">Email</a></li>
+    </ul>
+  </aside>
 
-<%= yield %>
-
+  <article id="content">
+    <%= yield %>
+  </article>
 </body>
 </html>

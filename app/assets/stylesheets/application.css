@@ -13,3 +13,90 @@
  *= require_tree .
  *= require_self
  */
+a, ul, li, body, strong, aside, section, h1, h2 {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  font: inherit;
+  text-decoration: inherit;
+  color: inherit;
+  background: transparent
+}
+
+ul, li {
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#sidebar {
+  font-family: "Ubuntu Mono";
+  color: #FFFFF3;
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  background: #444;
+  border-right: 5px solid #333;
+}
+
+.portrait {
+  width: 250px;
+  margin: auto;
+  padding: 25px 0;
+}
+
+.portrait div {
+  width: 58px;
+  height: 58px;
+  border: 1px solid #333;
+  float: left;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.portrait strong {
+  font-size: 24px;
+  font-weight: 700;
+  float: left;
+  margin: 15px 0 0 10px;
+}
+
+#sidebar ul {
+  width: 107px;
+  margin: auto;
+  font-size: 20px;
+}
+
+#sidebar ul li {
+  padding: 5px 0;
+}
+
+#sidebar a {
+  display: block;
+  width: 100%;
+}
+
+#sidebar a:hover {
+  color: #00C0FF;
+  font-weight: 700;
+}
+
+.quasi-border {
+  width: 300px;
+  height: 3px;
+  background: #555;
+  position: relative;
+  right: 97px;
+}
+
+#content {
+  width: calc(100% - 505px);
+  margin-left: 305px;
+  padding: 25px 10px 10px 10px;
+}
