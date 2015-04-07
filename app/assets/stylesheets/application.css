@@ -35,8 +35,12 @@ ul, li {
   display: block;
 }
 
-#sidebar {
+body {
   font-family: "Ubuntu Mono";
+  background: #555;
+}
+
+#sidebar {
   color: #FFFFF3;
   position: fixed;
   height: 100%;
@@ -98,5 +102,21 @@ ul, li {
 #content {
   width: calc(100% - 505px);
   margin-left: 305px;
-  padding: 25px 10px 10px 10px;
+  padding: 25px 25px 0 25px;
+  color: #444;
+  background: #FFFFF3;
+  height: calc(100% - 25px);
+  position: absolute;
+  border-right: 5px solid #333;
+}
+
+#content h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#content p {
+  font-size: 24px;
+  text-align: center;
 }
