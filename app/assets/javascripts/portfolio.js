@@ -4,7 +4,11 @@ window.Portfolio = {
   Views: {},
   Routers: {},
   initialize: function() {
-    alert('Hello from Backbone!');
+    new Portfolio.Routers.Router({
+      $rootEl: $('#content')
+    });
+    Backbone.history.start();
+    Backbone.history.navigate("about", {trigger: true})
   }
 };
 
