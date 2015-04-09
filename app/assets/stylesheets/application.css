@@ -124,6 +124,7 @@ p {
 .project {
   background: #BDBDBD;
   border: 3px solid #444;
+  margin: 20px;
 }
 
 .project strong {
@@ -146,8 +147,26 @@ p {
 
 .project-desc {
   font-size: 18px;
+  width: calc(100% - 400px);
+  float: left;
+  text-align: left;
+}
+
+.project-img {
+  border: 1px solid #444;
+  display: block;
+  margin: 20px;
+  float: left;
 }
 
 .mp {
   background: #2EB3DB;
+}
+
+.sn {
+  background: #2AFF3A;
+}
+
+.ch {
+  background: #FF1E1F;
 }
