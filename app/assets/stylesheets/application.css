@@ -71,6 +71,15 @@ body {
   margin: 15px 0 0 10px;
 }
 
+.selfie {
+  max-width: auto;
+  max-height: 150%;
+  transform: rotate(-90deg);
+  position: relative;
+  right: 30px;
+  top: 3px;
+}
+
 #sidebar ul {
   width: 107px;
   margin: auto;
