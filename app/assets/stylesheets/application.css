@@ -219,3 +219,8 @@ p {
 .part i {
   float: right;
 }
+
+.focus-link {
+  font-weight: 700;
+  color: #2EB3DB;
+}
